@@ -16,9 +16,9 @@ const priceSymbols = ['USD', 'CAD', 'BTC']
 // const abiDecoder = require('abi-decoder')
 // var Web3EthAbi = require('web3-eth-abi')
 
-// let hostname = window.location.hostname
-// let prefix = hostname === 'kovan.0xchange.me' ? 'kovan.api.' : 'api.'
-axios.defaults.baseURL = '//18.194.13.39:3000'
+let hostname = window.location.hostname
+let prefix = hostname === 'kovan.0xchange.me' ? 'kovan.api.' : 'api.'
+axios.defaults.baseURL = '//' + prefix + '0xchange.me'
 
 export default {
   withdraw ({commit, state}, eth) {

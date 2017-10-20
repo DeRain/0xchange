@@ -73,7 +73,7 @@
         return 'Kovan'
       },
       notNetwork () {
-        return 'Mainnet';
+        return 'Mainnet'
       },
       items () {
         return [{

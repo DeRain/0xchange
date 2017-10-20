@@ -73,7 +73,7 @@
         return 'Kovan'
       },
       notNetwork () {
-        return this.network === 'Kovan' ? 'Mainnet' : 'Kovan'
+        return 'Mainnet';
       },
       items () {
         return [{

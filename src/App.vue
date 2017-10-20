@@ -70,7 +70,7 @@
     computed: {
       ...mapGetters(['loading']),
       network () {
-        return window.location.hostname === 'kovan.0xchange.me' ? 'Kovan' : 'Mainnet'
+        return 'Kovan'
       },
       notNetwork () {
         return this.network === 'Kovan' ? 'Mainnet' : 'Kovan'

@@ -17,7 +17,7 @@ const priceSymbols = ['USD', 'CAD', 'BTC']
 // var Web3EthAbi = require('web3-eth-abi')
 
 let hostname = window.location.hostname
-let prefix = hostname === 'kovan.0xchange.me' ? 'kovan.api.' : 'api.'
+let prefix = hostname === 'kovan.api.'
 axios.defaults.baseURL = '//' + prefix + '0xchange.me'
 
 export default {
